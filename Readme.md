@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Kirill Bugaev](https://up.htmlacademy.ru/adaptive/18/user/244468).
-* Наставник: `Неизвестно`.
+* Наставник: Наставник: [Александр Тубольцев](https://htmlacademy.ru/profile/id86460).
 
 ---
 
