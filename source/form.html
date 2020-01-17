@@ -7,17 +7,17 @@
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__close" type="button" name="button"><span class="visually-hidden">Закрыть</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+          <li class="main-nav__item">
+            <a>Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
@@ -35,10 +35,10 @@
         <fieldset class="review__section section">
           <legend class="section__legend">Представьтесь:</legend>
           <label class="section__label">Имя*:
-            <input class="section__input" type="text" name="" value="" autocomplete="on" placeholder="Петр">
+            <input class="section__input" type="text" name="" value="" autocomplete="on" placeholder="Петр" required>
           </label>
           <label class="section__label">Фамилия*:
-            <input class="section__input" type="text" name="" value="" autocomplete="on" placeholder="Иванов">
+            <input class="section__input" type="text" name="" value="" autocomplete="on" placeholder="Иванов" required>
           </label>
           <label class="section__label">Отчество:
             <input class="section__input" type="text" name="" value="" autocomplete="on" placeholder="Александрович">
@@ -47,10 +47,10 @@
         <fieldset class="review__section section">
           <legend class="section__legend">Контактная информация:</legend>
           <label class="section__label">Контактный телефон*:
-            <input class="section__input section__input--phone" type="tel" name="" value="" autocomplete="on" placeholder="Введите телефон">
+            <input class="section__input section__input--phone" type="tel" name="" value="" autocomplete="on" placeholder="Введите телефон" required>
           </label>
           <label class="section__label">Электронная почта*:
-            <input class="section__input section__input--email" type="email" name="" value="" autocomplete="on" placeholder="Введите e-mail">
+            <input class="section__input section__input--email" type="email" name="" value="" autocomplete="on" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
         <fieldset class="review__section section">
