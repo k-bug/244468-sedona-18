@@ -1,6 +1,34 @@
 .reason {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 102px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   &--colored {
     background-color: @brand-color;
     color: #ffffff;
+    min-height: 470px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
+
+  &:last-child {
+    padding-bottom: 33px;
+  }
+}
+
+.reason__title {
+  font-size: @title-text-size;
+}
+
+.reason__intrio {
+  min-height: 143px;
+  margin-top: 47px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

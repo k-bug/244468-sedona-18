@@ -17,7 +17,7 @@
             <a class="main-nav__link link-unstyle" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a>Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link link-unstyle" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -26,13 +26,13 @@
         <button class="main-nav__show" type="button" name="button"><span class="visually-hidden">Показать</span></button>
       </nav>
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="" height="" alt="City of Sedona">
+        <img src="img/logo-sedona-mobile.svg" width="102px" height="83px" alt="City of Sedona">
       </a>
     </header>
     <main class="page-main">
       <h1 class="page-title">Оставьте свой отзыв</h1>
       <p class="page-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <img class="page-main__cover" src="https://via.placeholder.com/150x150" width="" height="" alt="Природа Седоны">
+      <img class="page-main__cover" src="img/bg-back-mobile@1x.jpg" width="768px" height="389px" alt="Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'">
       <form class="review" action="https://echo.htmlacademy.ru" method="post" autocomplete="on">
         <fieldset class="review__section section">
           <legend class="section__legend">Представьтесь:</legend>
@@ -57,41 +57,42 @@
         </fieldset>
         <fieldset class="review__section section">
           <legend class="section__legend">Ваше общее впечатление:</legend>
-          <label class="section__label">
+          <label class="section__input-label">
             <input class="section__input section__input--radio" type="radio" name="impression" value="good" checked>
             Скорее положительное
           </label>
-          <label class="section__label">
+          <label class="section__input-label">
             <input class="section__input section__input--radio" type="radio" name="impression" value="bad">
             Скорее отрицательное
           </label>
-          <label class="section__label">
+          <label class="section__input-label">
             <input class="section__input section__input--radio" type="radio" name="impression" value="dont-know">
             Затрудняюсь ответить
           </label>
         </fieldset>
         <fieldset class="review__section section">
           <legend class="section__legend">Посещенные достопримечательности:</legend>
-          <label class="section__label">
-            <input class="section__input section__input--radio" type="checkbox" name="sight" value="bridge" checked>
+          <label class="section__input-label">
+            <input class="section__input section__input--checkbox" type="checkbox" name="sight" value="bridge" checked>
+            <span class="checkbox"></span>
             Мост Дьявола
           </label>
-          <label class="section__label">
-            <input class="section__input section__input--radio" type="checkbox" name="sight" value="mountain" checked>
+          <label class="section__input-label">
+            <input class="section__input section__input--checkbox" type="checkbox" name="sight" value="mountain" checked>
             Гора-Колокол
           </label>
-          <label class="section__label">
-            <input class="section__input section__input--radio" type="checkbox" name="sight" value="park" checked>
+          <label class="section__input-label">
+            <input class="section__input section__input--checkbox" type="checkbox" name="sight" value="park" checked>
             Слайд-парк
           </label>
-          <label class="section__label">
-            <input class="section__input section__input--radio" type="checkbox" name="sight" value="mountains" >
+          <label class="section__input-label">
+            <input class="section__input section__input--checkbox" type="checkbox" name="sight" value="mountains" >
             Красные скалы
           </label>
         </fieldset>
         <div class="review__section section">
           <b class="section__legend">Опишите свои эмоции:</b>
-          <textarea name="name" rows="8" cols="80" placeholder="Опишите подробно все свои восторги "></textarea>
+          <textarea class="section__input" name="name" rows="8" cols="80" placeholder="Опишите подробно все свои восторги "></textarea>
         </div>
         <button class="site-button" type="submit" name="button">Отправить отзыв</button>
       </form>
@@ -110,7 +111,7 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <span class="page-text">Разработано</span>
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy">
         </a>
