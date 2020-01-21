@@ -1,18 +1,18 @@
 .social-list {
-  width: 46px;
-  height: 46px;
-  background-color: @brand-color;
+  display: flex;
+  margin: 0 auto;
 }
 
 .social-list__item {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: contain;
+  margin-left: 6px;
+}
 
+.social-list__item:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: @tablet-size) {
+  .social-list {
+    margin: 0;
+  }
 }

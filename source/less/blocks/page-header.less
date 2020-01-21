@@ -10,18 +10,14 @@
   margin: 0 auto;
 }
 
-.main-nav__list {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-nav__link {
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 710px) {
+@media (min-width: @tablet-size) {
   .page-header {
     width: 710px;
+  }
+}
+
+@media (min-width: @pc-size) {
+  .page-header {
+    width: 1200px;
   }
 }

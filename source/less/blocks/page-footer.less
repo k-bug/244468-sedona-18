@@ -25,3 +25,34 @@
   display: flex;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet-size) {
+  .page-footer {
+    min-height: 48px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    min-width: 648px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer__hash-tag {
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: @pc-size) {
+  .page-footer {
+    min-width: 960px;
+  }
+}
