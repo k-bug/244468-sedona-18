@@ -1,6 +1,8 @@
 .section {
   position: relative;
   border: none;
+  display: flex;
+  flex-direction: column;
 
   &::before {
     content: "";
@@ -43,6 +45,7 @@
 
 .section__legend {
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .section__label {
