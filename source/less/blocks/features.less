@@ -1,3 +1,74 @@
 .features {
   background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  padding-top: 26px;
+  padding-bottom: 14px;
+}
+
+.features__text {
+  font-family: @main-font;
+  font-size: @page-text-size;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
+  width: 215px;
+  padding: 0;
+  margin: 0;
+}
+
+.features__title {
+  padding: 0;
+  padding-bottom: 14px;
+  margin: 0;
+}
+
+.features__item {
+  position: relative;
+  list-style: none;
+  padding-top: 10px;
+  margin-bottom: 23px;
+  margin-left: 32px;
+
+  &--accommodation::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: -46px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 39px;
+    height: 37px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenirs::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: -46px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 32px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -2px;
+    left: -46px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 40px;
+    height: 35px;
+    background-image: url("../img/icon-burger.svg");
+  }
 }
