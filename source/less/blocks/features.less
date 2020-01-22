@@ -75,14 +75,22 @@
 
 @media (min-width: @tablet-size) {
   .features {
+    width: 672px;
     display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .features__text {
+    width: 164px;
   }
 }
 
 @media (min-width: @tablet-size) {
   .features__item {
     position: relative;
-    width: 164px;
     text-align: center;
     padding-top: 100px;
     margin-bottom: 67px;
