@@ -12,7 +12,7 @@
     background-color: @brand-color;
     color: #ffffff;
     min-height: 470px;
-    padding-top: 22px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -23,7 +23,16 @@
 
 .reason__title {
   font-size: @title-text-size;
+  font-weight: 700;
   line-height: 26px;
+  padding-top: 33px;
+  padding-bottom: 57px;
+  margin: 0;
+}
+
+.reason--colored .reason__title {
+  padding-top: 45px;
+  padding-bottom: 56px;
 }
 
 .reason__intrio {
@@ -43,6 +52,10 @@
   color: #ffffff;
   width: 265px;
   margin: 0 auto;
+}
+
+.reason--colored .reason__text {
+  padding-bottom: 45px;
 }
 
 .reason:nth-child(1n+4)::before {
