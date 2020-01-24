@@ -2,5 +2,57 @@
   font-family: @main-font;
   font-size: @page-text-size;
   text-transform: uppercase;
-  text-align: center;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 41px;
+  padding-bottom: 23px;
+  min-height: 180px;
+}
+
+.page-footer__hash-tag {
+  font-family: @main-font;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.page-footer__copyright {
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer {
+    min-height: 48px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    min-width: 648px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer__hash-tag {
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: @pc-size) {
+  .page-footer {
+    min-width: 960px;
+  }
 }

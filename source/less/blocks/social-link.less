@@ -1,0 +1,72 @@
+.social-link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: @brand-color;
+  position: relative;
+}
+
+.social-link--twitter::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.social-link--twitter:active::before {
+  opacity: 0.3;
+}
+
+.social-link--facebook::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 9px;
+  height: 18px;
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.social-link--facebook:active::before {
+  opacity: 0.3;
+}
+
+.social-link--youtube::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon-youtube.svg");
+}
+
+.social-link--youtube:active::before {
+  opacity: 0.3;
+}
+
+.social-link:hover {
+  background-color: #669ec0;
+}
+
+.social-link:active {
+  background-color: #5496bd;
+}

@@ -1,14 +1,18 @@
 .site-button {
   font-family: @main-font;
-  font-size: @title-text-size;
+  font-size: 21px;
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   background-color: @brand-color;
   border: none;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  width: 280px;
+  margin: 0 auto;
+
 
   &:hover {
     background-color: #669ec0;
@@ -21,5 +25,12 @@
 
   &:disabled {
     background-color: #e5e5e5;
+  }
+}
+
+
+@media (min-width: @tablet-size) {
+  .site-button {
+    width: 458px;
   }
 }
