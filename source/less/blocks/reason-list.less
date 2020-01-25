@@ -3,10 +3,19 @@
 // }
 
 // @media (min-width: @tablet-size) {
-//   .reason-list:nth-child(1n+3) {
+//   .reason-list {
 //     display: flex;
-//     flex-flow: row;
+//     flex-wrap: wrap;
+//     flex-flow: column;
 //     color: red;
 //     justify-content: space-between;
 //   }
 // }
+//
+@media (min-width: @tablet-size) {
+  .reason-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
