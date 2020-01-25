@@ -86,9 +86,28 @@
   }
 }
 
+@media (min-width: @pc-size) {
+  .features {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
 @media (min-width: @tablet-size) {
   .features__text {
     width: 164px;
+  }
+}
+
+@media (min-width: @pc-size) {
+  .features__text {
+    width: 283px;
+
+    &:nth-child(3) {
+      width: 220px;
+    }
   }
 }
 
@@ -99,6 +118,10 @@
     padding-top: 100px;
     margin-bottom: 67px;
     margin-left: 0;
+
+    &:nth-child(2) {
+      order: 3;
+    }
 
     &--accommodation::before {
       position: absolute;
