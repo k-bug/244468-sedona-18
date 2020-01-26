@@ -1,3 +1,8 @@
+// .post {
+//   width: 280px;
+//   margin: 0 auto;
+// }
+
 .post__title {
   font-size: @title-text-size;
   line-height: 24px;
@@ -5,6 +10,7 @@
   color: #000000;
   margin: 0;
   padding-bottom: 7px;
+  text-align: left;
 }
 
 .post__author {
@@ -15,6 +21,7 @@
   text-transform: none;
   margin: 0;
   padding-bottom: 10px;
+  text-align: left;
 }
 
 .post__like {
@@ -23,4 +30,25 @@
   font-weight: 700;
   color: #333333;
   margin: 0;
+  text-align: left;
+}
+
+@media (min-width: @tablet-size) {
+  .post {
+    width: 324px;
+
+    &:nth-child(1) {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @pc-size) {
+  .post {
+    width: 400px;
+
+    &:nth-child(1) {
+      width: 100%;
+    }
+  }
 }
