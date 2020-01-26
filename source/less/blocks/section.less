@@ -93,3 +93,27 @@
   text-transform: none;
   font-weight: 700;
 }
+
+@media (max-width: 709px){
+  .section__require {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .section {
+    &--first {
+      order: -1;
+    }
+  }
+  .section__submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section__require {
+    font-size: @page-text-size;
+    margin: auto 0;
+  }
+}

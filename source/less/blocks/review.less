@@ -12,3 +12,20 @@
 .review__section:last-child {
   padding-bottom: 51px;
 }
+
+@media (min-width: @tablet-size) {
+  .review {
+    width: 648px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__section {
+    width: 100%;
+
+    &--half {
+      width: 50%;
+    }
+  }
+}

@@ -32,11 +32,11 @@
     <main class="page-main">
       <img class="page-main__cover" src="img/bg-back-mobile@1x.jpg" width="768px" height="389px" alt="Sedona">
       <div class="page-main__intro">
-        <h1 class="page-title--form">Оставьте свой отзыв</h1>
-        <p class="page-text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h1 class="page-title page-title--form">Оставьте свой отзыв</h1>
+        <p class="page-text page-text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="review" action="https://echo.htmlacademy.ru" method="post" autocomplete="on">
-        <fieldset class="review__section section">
+        <fieldset class="review__section--half section">
           <legend class="section__legend">Представьтесь:</legend>
           <label class="section__label">Имя*:
             <input class="section__input" type="text" name="" value="" id="name" placeholder="Петр" required>
@@ -57,7 +57,7 @@
             <input class="section__input section__input--email" type="email" name="" value="" id="email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
-        <fieldset class="review__section section">
+        <fieldset class="review__section--half section section--first">
           <legend class="section__legend">Ваше общее впечатление:</legend>
           <label class="section__input-label">
             <input class="section__input section__input--radio" type="radio" name="impression" value="good" checked>
@@ -96,7 +96,10 @@
           <b class="section__legend--text">Опишите свои эмоции:</b>
           <textarea class="section__input" name="name" rows="8" cols="80" placeholder="Опишите подробно все свои восторги "></textarea>
         </div>
-        <button class="site-button" type="submit" name="button">Отправить отзыв</button>
+        <div class="section__submit">
+          <button class="site-button site-button--no-margin" type="submit" name="button">Отправить отзыв</button>
+          <span class="section__require">* — обязательные поля</span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
